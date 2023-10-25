@@ -1,0 +1,8 @@
+.header{
+    height: 5vh;
+    background-color: #529CAC;
+}
+.header a{
+    color: black;
+    text-decoration: none;
+}
