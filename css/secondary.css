@@ -4,3 +4,6 @@
 .img-boton{
     width: 50px;
 }
+.img-boton:hover{
+    cursor: pointer;
+}

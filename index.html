@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/principal.css" />
     <link rel="stylesheet" href="css/secondary.css" />
+    <link rel="stylesheet" href="css/popup.css" />
   </head>
   <body>
     <div class="container-fluid">
@@ -40,10 +41,37 @@
         </div>
       </section>
       <section class="row secondary-section">
-        <div class="col-3 offset-9">
-          <img class="img-boton" src="images/botonmas.png" alt="">
+        <div class="col-3 offset-9 px-0 d-flex justify-content-end">
+          <img class="img-boton" id="mostrarPopup" src="images/botonmas.png" alt="">
         </div>
       </section>
     </div>
+    <div class="popup show row d-flex justify-content-center border" id="popup">
+      <div class="col-12 d-flex flex-column border h-100 justify-content-around">
+        <label for="nombre">Nombre de la tarea</label>
+        <input type="text" id="nombre">
+        <label for="tipo">Tipo de tarea</label>
+        <select name="tipodetarea" id="tipodetarea">
+          <option selected>Elegir Tipo</option>
+          <option value="Personal">Personal</option>
+          <option value="Domestica">Domestica</option>
+          <option value="Entretenimiento">Entretenimiento</option>
+          <option value="Laboral">Laboral</option>
+        </select>
+        <label for="descripcion">Descripción de la tarea</label>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="4" placeholder="Que tenemos que hacer?"></textarea>
+        <label for="prioridad">Prioridad</label>
+        <input type="radio" name="1" id="check1" class="importancia">
+        <input type="radio" name="1" id="check2" class="importancia">
+        <input type="radio" name="1" id="check3" class="importancia">
+        <input type="radio" name="1" id="check4" class="importancia">
+        <div class="d-flex justify-content-around">
+          <button id="cancelar" class="btn btn-primary">Cancelar</button>
+          <button id="agregar" class="btn btn-primary">Agregar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,13 @@
+.popup{
+    height: 80vh;
+    position: absolute;
+    top: 40px;
+    left: 46px;
+}
+.show{
+    display: none !important;
+}
+.popup div{
+    background-color: white;
+}
+.body-style{background-color: rgba(0, 0, 0, 0.2);}
