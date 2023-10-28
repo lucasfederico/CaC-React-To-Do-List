@@ -4,3 +4,27 @@
 .img-snorlax{
     width: 200px;
 }
+
+/* Lista */
+.unlist{
+    padding: 0;
+    margin: 0;
+}
+.item-style{
+    background-color: whitesmoke;
+    width: 80vw;
+    height: 60px;
+    border: solid 1px black;
+    border-left: solid 5px red;
+    border-radius: 5px;
+}
+.item-style-img{
+    width: 30px;
+}
+.bi-x-circle{
+    cursor: pointer;
+}
+.textos{
+    padding: 0;
+    margin: 0;
+}

@@ -16,6 +16,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Mi css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -36,35 +37,73 @@
         <div
           class="col-sm-12 d-flex flex-column align-items-center justify-content-center"
         >
+          <ul class="unlist" id="lista">
+            <li class="item-style d-flex justify-content-between align-items-start">
+              <div class="d-flex align-items-center justify-content-around w-75">
+                <img class="item-style-img" src="images/tipos/briefcase.png" alt="">
+                <div>
+                  <p class="textos">tarea</p>
+                  <p>hacer esto</p>
+                </div>
+              </div>
+              <i class="bi bi-x-circle "></i>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-sm-12 d-flex flex-column align-items-center justify-content-center"
+        >
           <img class="img-snorlax" src="images/snorlax2.png" alt="" />
           <h2>Nada para hacer</h2>
         </div>
       </section>
       <section class="row secondary-section">
         <div class="col-3 offset-9 px-0 d-flex justify-content-end">
-          <img class="img-boton" id="mostrarPopup" src="images/botonmas.png" alt="">
+          <img
+            class="img-boton"
+            id="mostrarPopup"
+            src="images/botonmas.png"
+            alt=""
+          />
         </div>
       </section>
     </div>
+    <!-- POPUP -->
     <div class="popup show row d-flex justify-content-center border" id="popup">
-      <div class="col-12 d-flex flex-column border h-100 justify-content-around">
-        <label for="nombre">Nombre de la tarea</label>
-        <input type="text" id="nombre">
-        <label for="tipo">Tipo de tarea</label>
-        <select name="tipodetarea" id="tipodetarea">
-          <option selected>Elegir Tipo</option>
-          <option value="Personal">Personal</option>
-          <option value="Domestica">Domestica</option>
-          <option value="Entretenimiento">Entretenimiento</option>
-          <option value="Laboral">Laboral</option>
-        </select>
-        <label for="descripcion">Descripción de la tarea</label>
-        <textarea name="descripcion" id="descripcion" cols="30" rows="4" placeholder="Que tenemos que hacer?"></textarea>
-        <label for="prioridad">Prioridad</label>
-        <input type="radio" name="1" id="check1" class="importancia">
-        <input type="radio" name="1" id="check2" class="importancia">
-        <input type="radio" name="1" id="check3" class="importancia">
-        <input type="radio" name="1" id="check4" class="importancia">
+      <div
+        class="col-12 d-flex flex-column border h-100 justify-content-around"
+      >
+        <div class="d-flex flex-column">
+          <label for="nombre">Nombre de la tarea</label>
+          <input type="text" id="nombre" />
+        </div>
+        <div class="d-flex flex-column">
+          <label for="tipodetarea">Tipo de tarea</label>
+          <select name="tipodetarea" id="tipodetarea">
+            <option selected>Elegir Tipo</option>
+            <option value="Personal">Personal</option>
+            <option value="Domestica">Domestica</option>
+            <option value="Entretenimiento">Entretenimiento</option>
+            <option value="Laboral">Laboral</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column">
+          <label for="descripcion">Descripción de la tarea</label>
+          <textarea
+            name="descripcion"
+            id="descripcion"
+            cols="30"
+            rows="4"
+            placeholder="Que tenemos que hacer?"
+          ></textarea>
+        </div>
+        <div>
+          <label for="prioridad">Prioridad</label>
+          <input type="radio" name="1" id="check1" class="importancia" />
+          <input type="radio" name="1" id="check2" class="importancia" />
+          <input type="radio" name="1" id="check3" class="importancia" />
+          <input type="radio" name="1" id="check4" class="importancia" />
+        </div>
         <div class="d-flex justify-content-around">
           <button id="cancelar" class="btn btn-primary">Cancelar</button>
           <button id="agregar" class="btn btn-primary">Agregar</button>
