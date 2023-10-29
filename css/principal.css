@@ -12,10 +12,10 @@
 }
 .item-style{
     background-color: whitesmoke;
+    margin-top: 0.5em;
     width: 80vw;
     height: 60px;
     border: solid 1px black;
-    border-left: solid 5px red;
     border-radius: 5px;
 }
 .item-style-img{
