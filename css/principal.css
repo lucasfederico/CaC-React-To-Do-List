@@ -24,7 +24,17 @@
 .bi-x-circle{
     cursor: pointer;
 }
-.textos{
+.contenedor-tareas{
+    width: 75%;
+    height: 100%;
+}
+.texto-titulo{
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+.texto-descripcion{
+    font-size: 0.7em;
     padding: 0;
     margin: 0;
 }
