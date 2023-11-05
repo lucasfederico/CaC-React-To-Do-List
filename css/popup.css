@@ -1,7 +1,7 @@
 .popup{
     height: 80vh;
     position: absolute;
-    top: 45px;
+    top: 40px;
     left: 44px;
 }
 .show{
@@ -11,3 +11,37 @@
     background-color: white;
 }
 .body-style{background-color: rgba(0, 0, 0, 0.2);}
+
+/* Prioridad de tarea colores */
+input[type = "radio"]#check1{
+    accent-color: green;
+}
+input[type = "radio"]#check2{
+    accent-color: yellow;
+}
+input[type = "radio"]#check3{
+    accent-color: purple;
+}
+input[type = "radio"]#check4{
+    accent-color: red;
+}
+@media screen and (min-width: 768px) {
+    .popup{
+    width: 30vw;
+    position: absolute;
+    top: 40px;
+    left: 280px;
+    }
+  }
+@media screen and (min-width: 1024px) {
+    .popup{
+    height: 80vh;
+    width: 30vw;
+    position: absolute;
+    top: 60px;
+    left: 487px;
+    }
+  }
+  
+  
+  

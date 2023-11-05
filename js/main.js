@@ -70,10 +70,10 @@ const agregarTarea = () => {
         exitIcon.classList.add('bi', 'bi-x-circle')
         // LOGICA COLOR BORDE
         if (check1.checked){
-            item.style.borderLeft = '5px solid yellow'
+            item.style.borderLeft = '5px solid green'
         }
         else if(check2.checked){
-            item.style.borderLeft = '5px solid green'
+            item.style.borderLeft = '5px solid yellow'
         }
         else if(check3.checked){
             item.style.borderLeft = '5px solid purple'
@@ -103,7 +103,7 @@ const agregarTarea = () => {
         body.classList.remove('body-style')
     }}
     else{
-        console.log('no funciona')
+        alert('complete los campos por favor')
     }
 }
 
